@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.activity.FormContactActivity">
+
+        <EditText
+            android:id="@+id/activity_form_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:hint="Name"
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/activity_form_number"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Number"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="@+id/activity_form_name"
+            app:layout_constraintStart_toStartOf="@+id/activity_form_name"
+            app:layout_constraintTop_toBottomOf="@+id/activity_form_name" />
+
+        <Button
+            android:id="@+id/activity_form_button_save"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>
